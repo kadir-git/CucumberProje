@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="40.506">
+<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun aramasi yapar" time="12.149">
+<failure message="unknown error: failed to change window state to 'normal', current state is 'maximized'&#10;  (Session info: chrome=85.0.4183.121)&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-82CNAKM', ip: '192.168.178.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\kayao\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}&#10;Session ID: d21b0faa7f0f997433ba1e6a99f96116" type="org.openqa.selenium.WebDriverException"><![CDATA[Given kullanici "https://walmart.com" sayfasina gider.......................failed
+And kullanici walmart arama kutusuna "calculator" yazar ve arar.............skipped
+Then kullanici walmartta sonuc sayisini ekrana yazdirir.....................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: failed to change window state to 'normal', current state is 'maximized'
+  (Session info: chrome=85.0.4183.121)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-82CNAKM', ip: '192.168.178.21', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_261'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: C:\Users\kayao\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:58805}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true}
+Session ID: d21b0faa7f0f997433ba1e6a99f96116
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions$RemoteWindow.maximize(RemoteWebDriver.java:837)
+	at utilities.Driver.getDriver(Driver.java:52)
+	at stepdefinitions.EbayStepDefinitions.kullanici_sayfasina_gider(EbayStepDefinitions.java:17)
+	at ✽.kullanici "https://walmart.com" sayfasina gider(file:///C:/Users/kayao/IdeaProjects/CucumberProje/src/test/resources/features/walmart.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun aramasi yapar 2" time="11.285">
+<system-out><![CDATA[Given kullanici "https://walmart.com" sayfasina gider.......................passed
+And kullanici walmart arama kutusuna "watch" yazar ve arar..................passed
+Then kullanici walmartta sonuc sayisini ekrana yazdirir.....................passed
+]]></system-out>
+</testcase>
+<testcase classname="Walmart Urun Arama" name="TC08_kullanici walmartta urun aramasi yapar 3" time="15.55">
+<system-out><![CDATA[Given kullanici "https://walmart.com" sayfasina gider.......................passed
+And kullanici walmart arama kutusuna "flower" yazar ve arar.................passed
+Then kullanici walmartta sonuc sayisini ekrana yazdirir.....................passed
+]]></system-out>
+</testcase>
+</testsuite>
