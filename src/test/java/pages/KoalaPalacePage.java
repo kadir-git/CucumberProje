@@ -133,4 +133,33 @@ public class KoalaPalacePage {
     public List<WebElement> hotelReservationListIlkSayfaSonuclari;
 
 
+    @FindBy ( id = "Code")
+    public WebElement hotelEditCodeKutusu;
+    @FindBy ( id = "Name")
+    public WebElement hotelEditNameKutusu;
+    @FindBy ( id = "Address")
+    public WebElement hotelEditAdressKutusu;
+    @FindBy ( id = "Phone")
+    public WebElement hotelEditPhoneKutusu;
+    @FindBy ( id = "Email")
+    public WebElement hotelEditEmailKutusu;
+    @FindBy ( xpath = "//button[@class='btn green']")
+    public WebElement hotelEditSaveButonu;
+    @FindBy ( className = "bootbox-body")
+    public WebElement hotelEditBasariliYazisi;
+
+
+    @FindBy ( linkText = "Properties")
+    public WebElement hotelRoomEditPropertiesLinki;
+    @FindBy ( id = "lkpBarcodeTypes" )
+    public WebElement hotelRoomEditPropertiesTipDropdown;
+    @FindBy ( id = "txtBarcodeCode" )
+    public WebElement hotelRoomEditPropertiesCodeKutusu;
+    @FindBy ( id = "txtBarcode")
+    public WebElement hotelRoomEditPropertiesValueKutusu;
+    @FindBy ( xpath = "//button[@onclick='javascript:AddBarcode();return false;']")
+    public WebElement hotelRoomEditPropertiesSaveButonu;
+    @FindBy ( xpath = "//tbody/tr[1]/td[6]/a")
+    public WebElement hotelRoomEditPropertiesIlkKayitRemoveButonu;
+
 }

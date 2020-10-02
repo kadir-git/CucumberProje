@@ -11,7 +11,7 @@
         "steps": [
           {
             "result": {
-              "duration": 9719000000,
+              "duration": 10035000000,
               "status": "passed"
             },
             "line": 5,
@@ -23,7 +23,7 @@
           },
           {
             "result": {
-              "duration": 316000000,
+              "duration": 384000000,
               "status": "passed"
             },
             "line": 6,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 5779000000,
+              "duration": 6673000000,
               "status": "passed"
             },
             "line": 7,
@@ -48,11 +48,11 @@
         ]
       },
       {
-        "start_timestamp": "2020-10-01T20:19:31.534Z",
+        "start_timestamp": "2020-10-02T19:53:16.721Z",
         "before": [
           {
             "result": {
-              "duration": 2000000,
+              "duration": 3000000,
               "status": "passed"
             },
             "match": {
@@ -60,14 +60,14 @@
             }
           }
         ],
-        "line": 267,
-        "name": "TC26_kullanici hotelreservationlist sayfasinda verileri girerek reservation arar",
+        "line": 285,
+        "name": "TC28_kullanici hotelroomedit sayfasinda properties bolumundeki veriyi siler",
         "description": "",
-        "id": "koala-palace;tc26-kullanici-hotelreservationlist-sayfasinda-verileri-girerek-reservation-arar",
+        "id": "koala-palace;tc28-kullanici-hotelroomedit-sayfasinda-properties-bolumundeki-veriyi-siler",
         "after": [
           {
             "result": {
-              "duration": 1131000000,
+              "duration": 1236000000,
               "status": "passed"
             },
             "match": {
@@ -80,55 +80,109 @@
         "steps": [
           {
             "result": {
-              "duration": 1912000000,
+              "duration": 1677000000,
               "status": "passed"
             },
-            "line": 268,
-            "name": "kullanici hotelroomreservationlist sayfasina gider",
+            "line": 286,
+            "name": "kullanici hotelroomedit \"http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id\u003d13\" sayfasina gider",
             "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_sayfasina_gider()"
+              "arguments": [
+                {
+                  "val": "\"http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id\u003d13\"",
+                  "offset": 24
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasina_gider(java.lang.String)"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 502000000,
+              "duration": 176000000,
               "status": "passed"
             },
-            "line": 269,
-            "name": "kullanici hotelroomreservationlist hotelroomid bolumunde \"team06\" secer",
+            "line": 287,
+            "name": "kullanici hotelroomedit sayfasinda properties bolumune tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_properties_bolumune_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 484000000,
+              "status": "passed"
+            },
+            "line": 288,
+            "name": "kullanici hotelroomedit sayfasinda tip olarak \"room prop1\" secer",
             "match": {
               "arguments": [
                 {
-                  "val": "\"team06\"",
-                  "offset": 57
+                  "val": "\"room prop1\"",
+                  "offset": 46
                 }
               ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_hotelroomid_bolumunde_secer(java.lang.String)"
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_tip_olarak_secer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 268000000,
+              "duration": 214000000,
               "status": "passed"
             },
-            "line": 270,
-            "name": "kullanici hotelroomreservationlist arama kutusuna tiklar",
+            "line": 289,
+            "name": "kullanici hotelroomedit sayfasinda code olarak \"4444\" girer",
             "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_arama_kutusuna_tiklar()"
+              "arguments": [
+                {
+                  "val": "\"4444\"",
+                  "offset": 47
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_code_olarak_girer(java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 3570000000,
+              "duration": 174000000,
               "status": "passed"
             },
-            "line": 271,
-            "name": "kullanici hotelroomreservationlist kayitlarini inceler",
+            "line": 290,
+            "name": "kullanici hotelroomedit sayfasinda value olarak \"sistem bozuldu\" girer",
             "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomreservationlist_kayitlarini_inceler()"
+              "arguments": [
+                {
+                  "val": "\"sistem bozuldu\"",
+                  "offset": 48
+                }
+              ],
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_value_olarak_girer(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183000000,
+              "status": "passed"
+            },
+            "line": 291,
+            "name": "kullanici hotelroomedit sayfasinda save butonuna tiklar",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_save_butonuna_tiklar()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3153000000,
+              "status": "passed"
+            },
+            "line": 292,
+            "name": "kullanici hotelroomedit sayfasinda properties bolumunde yeni kayit oldugunu assert eder",
+            "match": {
+              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_properties_bolumunde_yeni_kayit_oldugunu_assert_eder()"
             },
             "keyword": "Then "
           }
@@ -138,7 +192,7 @@
             "name": "@koalapalace"
           },
           {
-            "name": "@hotelreservationsearch"
+            "name": "@hotelroomedit"
           }
         ]
       }
