@@ -21,7 +21,7 @@ public class DbReadStepDef {
 
     @Given("kullanici {string} tablosundaki {string} verilerini alir")
     public void kullanici_tablosundaki_verilerini_alir(String string, String string2) throws SQLException {
-        resultSet = statement.executeQuery("SELECT "+string2+" FROM dbo."+string);
+        resultSet = statement.executeQuery("SELECT " + string2 + " FROM dbo." + string);
     }
 
     @Given("kullanici {string} sutunundaki verileri okur")

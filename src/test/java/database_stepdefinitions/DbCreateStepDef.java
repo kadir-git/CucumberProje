@@ -13,6 +13,8 @@ public class DbCreateStepDef {
                 "VALUES ('113', 'BATCH 5', 'Cikmaz SK.', '10012', 'batch5@gmail.com', 10012, '2020-11-03 00:00:00.000', 4)";
         DBUtils.executeQuery(query);
 
+
+
         //son eklenen satirin name'ini ekrana yazdirin
 
         //System.out.println(DBUtils.getResultset().getString(query));
@@ -20,8 +22,8 @@ public class DbCreateStepDef {
         //String query2 = "SELECT Name FROM dbo.tHOTEL";
         //DBUtils.executeQuery(query2);
 
-        //DBUtils.getResultset().last();
-        //System.out.println(DBUtils.getResultset().getObject(query2).toString());
+        DBUtils.getResultset().last();
+        System.out.println(DBUtils.getResultset().getObject("Name").toString());
 
     }
 

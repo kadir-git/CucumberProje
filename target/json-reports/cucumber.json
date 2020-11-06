@@ -3,208 +3,82 @@
     "line": 2,
     "elements": [
       {
-        "line": 4,
-        "name": "Koala Palace Admin Giris",
+        "start_timestamp": "2020-11-03T20:24:16.138Z",
+        "line": 3,
+        "name": "kullanici hotel tablosundaki verileri okur",
         "description": "",
-        "type": "background",
-        "keyword": "Background",
-        "steps": [
-          {
-            "result": {
-              "duration": 10035000000,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "kullanici koalapalace admin sayfasina gider",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_koalapalace_admin_sayfasina_gider()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 384000000,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "kullanici kullaniciadi ve sifresini girer",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_kullaniciadi_ve_sifresini_girer()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 6673000000,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "kullanici giris islemini gerceklestirir",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_giris_islemini_gerceklestirir()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "start_timestamp": "2020-10-02T19:53:16.721Z",
-        "before": [
-          {
-            "result": {
-              "duration": 3000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.setUp()"
-            }
-          }
-        ],
-        "line": 285,
-        "name": "TC28_kullanici hotelroomedit sayfasinda properties bolumundeki veriyi siler",
-        "description": "",
-        "id": "koala-palace;tc28-kullanici-hotelroomedit-sayfasinda-properties-bolumundeki-veriyi-siler",
-        "after": [
-          {
-            "result": {
-              "duration": 1236000000,
-              "status": "passed"
-            },
-            "match": {
-              "location": "stepdefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
-            }
-          }
-        ],
+        "id": "veri-okuma;kullanici-hotel-tablosundaki-verileri-okur",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 1677000000,
+              "duration": 3424000000,
               "status": "passed"
             },
-            "line": 286,
-            "name": "kullanici hotelroomedit \"http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id\u003d13\" sayfasina gider",
+            "line": 4,
+            "name": "kullanici veritabanina baglanir",
             "match": {
-              "arguments": [
-                {
-                  "val": "\"http://www.kaolapalace-qa-environment2.com/admin/HotelRoomAdmin/Edit?Id\u003d13\"",
-                  "offset": 24
-                }
-              ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasina_gider(java.lang.String)"
+              "location": "database_stepdefinitions.DbReadStepDef.kullanici_veritabanina_baglanir()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 176000000,
+              "duration": 474000000,
               "status": "passed"
             },
-            "line": 287,
-            "name": "kullanici hotelroomedit sayfasinda properties bolumune tiklar",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_properties_bolumune_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 484000000,
-              "status": "passed"
-            },
-            "line": 288,
-            "name": "kullanici hotelroomedit sayfasinda tip olarak \"room prop1\" secer",
+            "line": 5,
+            "name": "kullanici \"tHOTEL\" tablosundaki \"Name\" verilerini alir",
             "match": {
               "arguments": [
                 {
-                  "val": "\"room prop1\"",
-                  "offset": 46
+                  "val": "\"tHOTEL\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"Name\"",
+                  "offset": 32
                 }
               ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_tip_olarak_secer(java.lang.String)"
+              "location": "database_stepdefinitions.DbReadStepDef.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 214000000,
+              "duration": 2054000000,
               "status": "passed"
             },
-            "line": 289,
-            "name": "kullanici hotelroomedit sayfasinda code olarak \"4444\" girer",
+            "line": 6,
+            "name": "kullanici \"Name\" sutunundaki verileri okur",
             "match": {
               "arguments": [
                 {
-                  "val": "\"4444\"",
-                  "offset": 47
+                  "val": "\"Name\"",
+                  "offset": 10
                 }
               ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_code_olarak_girer(java.lang.String)"
+              "location": "database_stepdefinitions.DbReadStepDef.kullanici_sutunundaki_verileri_okur(java.lang.String)"
             },
             "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 174000000,
-              "status": "passed"
-            },
-            "line": 290,
-            "name": "kullanici hotelroomedit sayfasinda value olarak \"sistem bozuldu\" girer",
-            "match": {
-              "arguments": [
-                {
-                  "val": "\"sistem bozuldu\"",
-                  "offset": 48
-                }
-              ],
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_value_olarak_girer(java.lang.String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 183000000,
-              "status": "passed"
-            },
-            "line": 291,
-            "name": "kullanici hotelroomedit sayfasinda save butonuna tiklar",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_save_butonuna_tiklar()"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 3153000000,
-              "status": "passed"
-            },
-            "line": 292,
-            "name": "kullanici hotelroomedit sayfasinda properties bolumunde yeni kayit oldugunu assert eder",
-            "match": {
-              "location": "stepdefinitions.KoalaPalaceStepDef.kullanici_hotelroomedit_sayfasinda_properties_bolumunde_yeni_kayit_oldugunu_assert_eder()"
-            },
-            "keyword": "Then "
           }
         ],
         "tags": [
           {
-            "name": "@koalapalace"
-          },
-          {
-            "name": "@hotelroomedit"
+            "name": "@dbokuma"
           }
         ]
       }
     ],
-    "name": "Koala Palace",
+    "name": "Veri Okuma",
     "description": "",
-    "id": "koala-palace",
+    "id": "veri-okuma",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/koalapalace.feature",
+    "uri": "file:src/test/resources/features/dbokuma.feature",
     "tags": [
       {
-        "name": "@koalapalace",
+        "name": "@dbokuma",
         "type": "Tag",
         "location": {
           "line": 1,
